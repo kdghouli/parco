@@ -22,6 +22,8 @@ export default {
         };
     },
 
+    name:'index-vhl',
+
     mounted() {
         console.log("Component mounted.");
         this.indextation();
