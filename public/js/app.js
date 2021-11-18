@@ -2015,7 +2015,7 @@ __webpack_require__.r(__webpack_exports__);
     console.log("Component mounted.");
     this.indextation();
   },
-  // mounted() {
+  // mounted(2222) {
   //     console.log("Component mounted.");
   //     this.indextation();
   // },

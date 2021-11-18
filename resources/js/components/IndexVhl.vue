@@ -28,12 +28,12 @@ export default {
         console.log("Component mounted.");
         this.indextation();
      },
-    // mounted() {
+    // mounted(2222) {
     //     console.log("Component mounted.");
     //     this.indextation();
     // },
 
-    
+
     methods: {
         indextation() {
             axios.get("/api/vhls").then((resp) => {
