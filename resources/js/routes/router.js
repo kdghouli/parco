@@ -9,9 +9,9 @@ import IndexVhl from '../components/IndexVhl.vue';
 import Global from '../components/Global.vue';
 
 const routes =[
-    {path:'',component:Global,name:'global'},
-    {path:'',component:IndexVhl,name:'index-vhl'},
-    {path:'',component:khalid,name:'khalid'}
+    {path:'/',component:Global,name:'global'},
+    {path:'/1',component:IndexVhl,name:'index-vhl'},
+    {path:'/2',component:khalid,name:'khalid'}
 ];
 
 

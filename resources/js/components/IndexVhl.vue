@@ -22,12 +22,18 @@ export default {
         };
     },
 
-    name:'index-vhl',
+    //name:'index-vhl',
 
-    mounted() {
+     created() {
         console.log("Component mounted.");
         this.indextation();
-    },
+     },
+    // mounted() {
+    //     console.log("Component mounted.");
+    //     this.indextation();
+    // },
+
+    
     methods: {
         indextation() {
             axios.get("/api/vhls").then((resp) => {

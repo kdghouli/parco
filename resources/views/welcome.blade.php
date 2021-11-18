@@ -37,8 +37,8 @@
             <div class="title m-b-md" id="app">
                 PARC
 
+                <global></global>
 
-                <router-view> </router-view>
 
 
             </div>

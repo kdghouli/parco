@@ -1965,7 +1965,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2011,11 +2010,15 @@ __webpack_require__.r(__webpack_exports__);
       vhls: {}
     };
   },
-  name: 'index-vhl',
-  mounted: function mounted() {
+  //name:'index-vhl',
+  created: function created() {
     console.log("Component mounted.");
     this.indextation();
   },
+  // mounted() {
+  //     console.log("Component mounted.");
+  //     this.indextation();
+  // },
   methods: {
     indextation: function indextation() {
       var _this = this;
@@ -37700,14 +37703,16 @@ var render = function () {
       _c("div", { staticClass: "col-md-8" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header" }, [
-            _vm._v("Global Component\n                    "),
+            _vm._v(
+              "\n                    Global Component\n                    "
+            ),
             _c(
               "div",
               { staticClass: "nav" },
               [
-                _c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")]),
-                _vm._v(" |\n                "),
-                _c("router-link", { attrs: { to: "/" } }, [_vm._v("khalid")]),
+                _c("router-link", { attrs: { to: "/1" } }, [_vm._v("Home")]),
+                _vm._v(" |\n                        "),
+                _c("router-link", { attrs: { to: "/2" } }, [_vm._v("khalid")]),
               ],
               1
             ),
@@ -53597,15 +53602,15 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 
 
 var routes = [{
-  path: '',
+  path: '/',
   component: _components_Global_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
   name: 'global'
 }, {
-  path: '',
+  path: '/1',
   component: _components_IndexVhl_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
   name: 'index-vhl'
 }, {
-  path: '',
+  path: '/2',
   component: _components_khalid_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
   name: 'khalid'
 }];
