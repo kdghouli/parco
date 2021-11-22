@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Vhl;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 class VhlController extends Controller
 {
     /**
@@ -15,7 +14,7 @@ class VhlController extends Controller
      */
     public function index()
     {
-        $vhls =Vhl::latest()->get();
+        $vhls = Vhl::latest()->get();
         return response()->json($vhls);
     }
 
@@ -26,7 +25,6 @@ class VhlController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -37,7 +35,9 @@ class VhlController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        Vhl::create($request->all());
+        return "<h1>c'est Ok pour moi</h1>";
     }
 
     /**

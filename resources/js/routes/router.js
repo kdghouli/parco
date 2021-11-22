@@ -1,17 +1,22 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import IndexCamion from '../components/IndexCamion.vue';
+import GlobalRouter from '../components/GlobalRouter.vue';
+import AddVhl from '../components/AddVhl.vue';
+import ShowVhl from '../components/ShowVhl.vue';
+import UpdateVhl from '../components/UpdateVhl.vue';
+
+
+
+
 
 Vue.use(VueRouter);
-
-
-import khalid from '../components/khalid.vue';
-import IndexVhl from '../components/IndexVhl.vue';
-import Global from '../components/Global.vue';
-
 const routes =[
-    {path:'/',component:Global,name:'global'},
-    {path:'/1',component:IndexVhl,name:'index-vhl'},
-    {path:'/2',component:khalid,name:'khalid'}
+    {path:'/',component:GlobalRouter,name:'global-router'},
+    {path:'/vhls',component:IndexCamion,name:'index-camion'},
+    {path:'/vhls/ad',component:AddVhl,name:'add-vhl'},
+    {path:'/vhls/show',component:ShowVhl,name:'show-vhl'},
+    {path:'/vhls/update',component:UpdateVhl,name:'update-vhl'}
 ];
 
 

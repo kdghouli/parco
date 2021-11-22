@@ -17,6 +17,15 @@ class CreateVhlsTable extends Migration
             $table->bigIncrements('id');
             $table->string('matricule');
             $table->string('marque');
+            $table->string('type');
+            $table->string('puissance');
+            $table->string('genre');
+            $table->string('dmc');
+            $table->string('intitule');
+            $table->string('agence');
+            $table->string('chassis');
+            $table->boolean('eccbc');
+            $table->boolean('active');
             $table->timestamps();
         });
     }
